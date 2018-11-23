@@ -10,7 +10,7 @@ steps:
     GOOS: "linux"
     GOARCH: "amd64"
   commands:
-  - mkdir -p bin
+    - mkdir -p bin
     - . ./scripts/set-env.sh
     - apk update && apk add git
 
