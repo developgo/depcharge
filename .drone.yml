@@ -15,6 +15,7 @@ steps:
     - apk update && apk add git
 
     - go get ./...
+    - ls -al
     - go build
     - ./depcharge -f -- go get {{get}}
 
