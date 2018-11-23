@@ -16,7 +16,7 @@ steps:
 
     - go get ./...
     - ls -al
-    - go build
+    - go build -o depcharge
     - ./depcharge -f -- go get {{get}}
 
     - export VERSION=$(echo $CI_COMMIT_SHA| cut -c1-7)
